@@ -1,0 +1,1 @@
+![[Check wifi status from terminal]]
