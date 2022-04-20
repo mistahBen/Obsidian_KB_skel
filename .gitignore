@@ -1,0 +1,8 @@
+# personal worklog
+_Worklog/**
+!_Worklog/.gitkeep
+
+# Obsidian system files
+
+.obsidian/**
+.DS_Store
