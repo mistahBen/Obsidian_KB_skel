@@ -1,6 +1,10 @@
 #!/bin/bash
-#run this script to copy initial useful plugins and themes
+#run this script to copy initial useful plugins and themes. Must be run from the root directory of your obsidian vault.
 
+if ! [ ls -d .obsidian/plugins ] ; # check that we are in the right directory
+  then
+  echo "obsidian plugin folder not found. Exiting."
+  exit(1)
 cp -r env/obsidian/plugins/* .obsidian/plugins/
 mkdir .obsidian/plugins/themes
 cp env/obsidian/plugins/*.json .obsidian/plugins/
